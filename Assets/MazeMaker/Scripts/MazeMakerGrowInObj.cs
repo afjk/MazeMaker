@@ -6,7 +6,7 @@ public class MazeMakerGrowInObj : MonoBehaviour {
 
     public bool growOnStart = true;
 
-    public GameObject roadObject = null;
+    private GameObject roadObject = null;
     public GameObject coverObject = null;
     public GameObject preRoadObject = null;
 
@@ -22,6 +22,7 @@ public class MazeMakerGrowInObj : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        roadObject = this.gameObject;
         MakeRayList();
 
         if ( isStart() )
