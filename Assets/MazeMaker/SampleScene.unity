@@ -978,7 +978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 825074653}
   m_Layer: 0
-  m_Name: MazeBase1 (1)
+  m_Name: MazeBase4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1615,7 +1615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1421162064}
   m_Layer: 0
-  m_Name: MazeBase2 (1)
+  m_Name: MazeBase5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
