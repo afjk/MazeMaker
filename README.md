@@ -2,7 +2,7 @@
 Maze maker for Unity
 
 # 特徴
-Unityでの立体迷路自動生成プログラム
+Unity向け立体迷路自動生成プログラム
 
 # 使用方法
 1. 迷路を生成する範囲を設定する。
@@ -16,6 +16,6 @@ Unityでの立体迷路自動生成プログラム
 1. 実行すると範囲オブジェクトの形状に沿って立体迷路を自動生成する。
 
 # その他
-- MazeMakerGrowInObjのGrow On Startチェックを外すと、起動時に迷路生成を開始しない。Grow()を呼び出すことで任意のタイミングで迷路生成を開始できる。
+- 任意のタイミングで迷路生成を実行したい場合、MazeMakerGrowInObjのGrow On Startチェックを外す。MazeMakerGrowInObjのGrow()を呼ぶと迷路生成が開始する。
 - 生成範囲のオブジェクト以外は障害物として迂回して迷路を生成する。
 - 任意形状のオブジェクトの内部に迷路を生成したい場合、[SA Collider Builder](https://www.assetstore.unity3d.com/jp/#!/content/15058)などで中が空洞のコライダを生成し、内部に迷路生成の起点を作成してください。
