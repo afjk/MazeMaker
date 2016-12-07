@@ -216,7 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growOnStart: 1
-  roadObject: {fileID: 215330780}
   coverObject: {fileID: 0}
   preRoadObject: {fileID: 0}
 --- !u!23 &215330783
@@ -430,13 +429,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 301932410}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.22, y: 1, z: -36.9}
+  m_LocalRotation: {x: 0.15707345, y: -0, z: -0, w: 0.9875869}
+  m_LocalPosition: {x: 23.22, y: 15.5, z: -49.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18.074001, y: 0, z: 0}
 --- !u!1 &340438854
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growOnStart: 1
-  roadObject: {fileID: 379950986}
   coverObject: {fileID: 0}
   preRoadObject: {fileID: 0}
 --- !u!23 &379950989
@@ -1123,7 +1121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growOnStart: 1
-  roadObject: {fileID: 882167041}
   coverObject: {fileID: 0}
   preRoadObject: {fileID: 0}
 --- !u!23 &882167044
@@ -1301,7 +1298,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growOnStart: 1
-  roadObject: {fileID: 986726372}
   coverObject: {fileID: 0}
   preRoadObject: {fileID: 0}
 --- !u!23 &986726375
@@ -1398,7 +1394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growOnStart: 1
-  roadObject: {fileID: 1099759911}
   coverObject: {fileID: 0}
   preRoadObject: {fileID: 0}
 --- !u!23 &1099759914
@@ -1680,7 +1675,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growOnStart: 1
-  roadObject: {fileID: 1574000703}
   coverObject: {fileID: 0}
   preRoadObject: {fileID: 0}
 --- !u!23 &1574000706
@@ -1859,7 +1853,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growOnStart: 1
-  roadObject: {fileID: 1978474524}
   coverObject: {fileID: 0}
   preRoadObject: {fileID: 0}
 --- !u!23 &1978474527
