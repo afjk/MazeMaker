@@ -9,10 +9,11 @@ public class MazeMakerGrowInObj : MonoBehaviour {
     private GameObject roadObject = null;
     public GameObject coverObject = null;
     public GameObject preRoadObject = null;
+    public float scale = 1.0f;
 
     private GameObject mMazeBase;
 
-    private bool makeMazeComplete = false;
+    public bool makeMazeComplete = false;
 
     private bool isActive = false;
 
@@ -22,6 +23,7 @@ public class MazeMakerGrowInObj : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        scale = this.gameObject.transform.localScale.x;
         roadObject = this.gameObject;
         MakeRayList();
 
@@ -119,8 +121,8 @@ public class MazeMakerGrowInObj : MonoBehaviour {
 
         List<Ray> rayList = new List<Ray>();
         RaycastHit hit;
-        float distance = 2.0f;
-        float radious = 1.0f;
+        float distance = 2.0f * scale;
+        float radious = 1.0f * scale;
 
         if( mRayList.Count > 0 )
         {
@@ -182,13 +184,13 @@ public class MazeMakerGrowInObj : MonoBehaviour {
     void GoAhead(Vector3 direction)
     {
         GameObject copySpaceCube1 = Object.Instantiate(roadObject) as GameObject;
-        copySpaceCube1.transform.position = this.transform.position + direction * 1.0f;
+        copySpaceCube1.transform.position = this.transform.position + direction * 1.0f * scale;
         copySpaceCube1.name = roadObject.name;
 
         Destroy(copySpaceCube1.GetComponent<MazeMakerGrowInObj>());
 
         GameObject copySpaceCube2 = Object.Instantiate(roadObject) as GameObject;
-        copySpaceCube2.transform.position = this.transform.position + direction * 2.0f;
+        copySpaceCube2.transform.position = this.transform.position + direction * 2.0f * scale;
         copySpaceCube2.name = roadObject.name;
 
         copySpaceCube2.GetComponent<MazeMakerGrowInObj>().preRoadObject = this.gameObject;
