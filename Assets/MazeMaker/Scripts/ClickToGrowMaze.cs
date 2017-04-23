@@ -53,7 +53,7 @@ public class ClickToGrowMaze : MonoBehaviour {
                 for (int i = 1; i < gameObjects.Count; i++)
                 {
                     float distance = Vector3.Distance(Camera.main.transform.position, gameObjects[i].transform.position);
-                    if (minDistance < distance)
+                    if (minDistance > distance)
                     {
                         minDistance = distance;
                         result = gameObjects[i];
